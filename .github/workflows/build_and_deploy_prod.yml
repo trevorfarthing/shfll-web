@@ -3,7 +3,7 @@ name: Deploy Shfll web app to AWS S3
 on:
   # Runs on pushes targeting the master branch
   push:
-    branches: ["master"]
+    branches: ['master']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -24,7 +24,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: '16'
       - name: Restore cache
         uses: actions/cache@v3
         with:
